@@ -1,0 +1,119 @@
+[{
+    "index": 0,
+    "name": "Alvi",
+    "codeBase": "Code",
+    "urlLive": "https://alvi.netlify.app/",
+    "urlCode": "https://github.com/TutulDevs/alvee",
+    "notes": "A multi-page blog site."
+},
+    {
+        "index": 1,
+        "name": "The Evenet",
+        "codeBase": "Code",
+        "urlLive": "https://theevenet.netlify.app/",
+        "urlCode": "https://github.com/TutulDevs/TheEvenet",
+        "notes": "A single-page business website on event management. [Floats]"
+    },
+    {
+        "index": 2,
+        "name": "Huddle",
+        "codeBase": "Code",
+        "urlLive": "https://huddle-td.netlify.app",
+        "urlCode": "https://github.com/TutulDevs/huddle",
+        "notes": "A single-page business website. [Floats]"
+    }, {
+        "index": 3,
+        "name": "Maxim",
+        "codeBase": "Code",
+        "urlLive": "https://maxim-td.netlify.app/",
+        "urlCode": "https://github.com/TutulDevs/maxim",
+        "notes": "A single-page business website. [Floats]"
+    },
+    {
+        "index": 4,
+        "name": "Create",
+        "codeBase": "Code",
+        "urlLive": "https://create-td.netlify.app",
+        "urlCode": "https://github.com/TutulDevs/create",
+        "notes": "A single-page business website. [Floats]"
+    },
+    {
+        "index": 5,
+        "name": "AdminStrap",
+        "codeBase": "Code",
+        "urlLive": "https://adminstrap-td.netlify.app",
+        "urlCode": "https://github.com/TutulDevs/adminStrap",
+        "notes": "A simple admin panel based on Bootstrap 4."
+    },
+    {
+        "index": 6,
+        "name": "Industrious",
+        "codeBase": "Code",
+        "urlLive": "https://industrious-td.netlify.app/",
+        "urlCode": "https://github.com/TutulDevs/industrious",
+        "notes": "A single-page website based on Bootstrap 4."
+    },
+    {
+        "index": 7,
+        "name": "w3newbie",
+        "codeBase": "Code",
+        "urlLive": "https://w3newbie-tutuldevs.netlify.app",
+        "urlCode": "https://github.com/TutulDevs/w3newbie",
+        "notes": "A single-page website based on Bootstrap 4."
+    },
+    {
+        "index": 8,
+        "name": "Holiday",
+        "codeBase": "Code",
+        "urlLive": "https://holidaytutul.netlify.app",
+        "urlCode": "https://github.com/TutulDevs/holiday",
+        "notes": "A multi-page website on tour management. [Grid]"
+    },
+    {
+        "index": 9,
+        "name": "Helium",
+        "codeBase": "Code",
+        "urlLive": "https://helium.netlify.app/",
+        "urlCode": "https://github.com/TutulDevs/helium",
+        "notes": "A single-page business website. [Grid, Flexbox]"
+    },
+    {
+        "index": 10,
+        "name": "Fruits and Health",
+        "codeBase": "Code",
+        "urlLive": "#",
+        "urlCode": "https://github.com/TutulDevs/fruits-and-health",
+        "notes": "[Yet to host 😑] A multi-page, minimalist, blogsite on health."
+    },
+    {
+        "index": 11,
+        "name": "Simple Blog",
+        "codeBase": "Code",
+        "urlLive": "#",
+        "urlCode": "https://github.com/TutulDevs/simple-blog",
+        "notes": "[Yet to host 😑] A single-page blogsite, completely on CSS Grid."
+    },
+    {
+        "index": 12,
+        "name": "Tribute Page",
+        "codeBase": "Code",
+        "urlLive": "https://codepen.io/TutulDevs/full/KKVmOEy",
+        "urlCode": "https://github.com/TutulDevs/fcc-rwd/tree/master/tribute-page",
+        "notes": "A tribute to Noam Chomsky."
+    },
+    {
+        "index": 13,
+        "name": "Survey Form",
+        "codeBase": "Code",
+        "urlLive": "https://codepen.io/TutulDevs/full/gOPWVVM",
+        "urlCode": "https://github.com/TutulDevs/fcc-rwd/tree/master/survey-form",
+        "notes": "A survey form. "
+    },
+    {
+        "index": 14,
+        "name": "Runner",
+        "codeBase": "Code",
+        "urlLive": "https://codepen.io/TutulDevs/full/",
+        "urlCode": "#",
+        "notes": "A single-page website."
+    }]

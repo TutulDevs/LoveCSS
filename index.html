@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Collection of all js projects" />
+        <meta name="keywords" content="js, JavaScript, web, coding" />
+        <title>Love CSS</title>
+        <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    </head>
+    <body>
+        <header>
+            <h1>
+                ❤️ CSS 
+            </h1>
+            <p>
+                This is a list of some of the websites I cloned to practiced my CSS skills. I've made a total of 32 websites but all of them are not in the list at the moment. Surely they'll be added at some point. 
+            </p>
+            <p>
+                All of them are responsive. For responsiveness I've used the good-old <strong>floats</strong>. Later I used CSS Flexbox and CSS Grid. <br />
+                I've also built 50+ CSS components and some CSS arts. All of them are displayed in CodePen. 
+            </p>
+            <p>
+                I hope this will help developers who wants to hone their CSS skills. Trust me it's interesting. 
+            </p>
+            <p>
+                Contact:
+                <a href="https://twitter.com/TutulDevs">Twitter</a>
+                <a href="https://github.com/TutulDevs">GitHub</a>
+                <a href="https://codepen.io/TutulDevs">Codepen</a>
+                <a href="https://www.codewars.com/users/TutulDevs">CodeWars</a>
+            </p>
+        </header>
+
+        <table class="blueTable">
+            <thead>
+                <tr>
+                    <th data-col="serial" data-order="desc">↕</th>
+                    <th>Live</th>
+                    <th>Code</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+                <!-- <tr>
+                    <td>00</td>
+                    <td>
+                        <a
+                            href="https://weather-td.netlify.app/"
+                            target="_blank"
+                            >Weather App</a
+                        >
+                    </td>
+                    <td>
+                        <a
+                            href="https://github.com/TutulDevs/weatherApp"
+                            target="_blank"
+                            >GitHub</a
+                        >
+                    </td>
+                    <td>API</td>
+                </tr> -->
+            </tbody>
+        </table>
+
+        <script type="text/javascript" src="projectList.json"></script>
+        <script type="text/javascript">
+            const tableBody = document.querySelector('.tbody');
+            const serial = document.querySelector('[data-col]');
+            let items = [];
+
+            fetch('projectList.json')
+                .then((response) => response.json())
+                .then((data) => {
+                    items.push(...data);
+                    populateUI(items, tableBody);
+                });
+
+            function populateUI(arr = [], list) {
+                list.innerHTML = arr
+                    .map((el) => {
+                        return `
+                            <tr>
+                                <td>${
+                                    el.index < 10 ? '0' + el.index : el.index
+                                }</td>
+                                <td>
+                                    <a href="${el.urlLive}"
+                                        target="_blank" >
+
+                                        ${el.name}
+
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="${el.urlCode}"
+                                        target="_blank" >
+
+                                        ${el.codeBase} 
+
+                                    </a>
+                                </td>
+                                <td> ${el.notes}</td>
+                            </tr>
+                        `;
+                    })
+                    .join('');
+            }
+
+            function sortSerial() {
+                const col = this.dataset.col;
+                const order = this.dataset.order;
+
+                if (order == 'desc') {
+                    this.dataset.order = 'asc';
+                    items = items.sort((a, b) => (a[col] > b[col] ? 1 : -1));
+                } else {
+                    this.dataset.order = 'desc';
+                    items = items.sort((a, b) => (a[col] < b[col] ? 1 : -1));
+                }
+
+                populateUI(items, tableBody);
+            }
+
+            serial.addEventListener('click', sortSerial);
+        </script>
+    </body>
+</html>
